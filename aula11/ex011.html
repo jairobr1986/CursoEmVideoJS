@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+  <h1>Você é Brasileiro?</h1>
+  <div>
+    Em qual <strong>País</strong>, você nasceu:
+    <input type="text" name="paisnsc" id="paisnasc" placeholder="Digite Aqui...">
+    <button id="pesquisar" onclick="pesquisar()">Pesquisar</button>
+  </div>
+  <div id="res"></div>
+
+  <script>
+    function pesquisar() {
+      var paisnaschtml = window.document.querySelector(`input#paisnasc`);
+      var paisnascjs = paisnaschtml.value.toUpperCase().trim();
+      var res = window.document.getElementById(`res`)
+
+      if (paisnascjs === ``) {
+        res.innerHTML = `Por favor digite o seu <strong>PAÍS</strong> de nascimento.`
+      }
+
+      else if ( paisnascjs === `BRASIL`) {
+        res.innerHTML = `Você nasceu no <strong>${paisnascjs}</strong>, e é um excelente país, portanto você é Brasileiro. `
+      }
+      else {
+        res.innerHTML = `Como você nasceu no país do/a <strong>${paisnascjs}</strong>, você é estrangeiro aqui no BRASIL.`
+      }
+    }
+
+  </script>
+
+
+</body>
+</html>

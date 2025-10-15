@@ -1,0 +1,122 @@
+n=VARIAVEL(n AQUI NESSA ANOTAÇÃO SIGNIFICA UMA VARIAVEL
+
+------------------------------------------------------------
+PARA CONVERTER PARA NÚMEROS
+Number()
+Number.parseInt
+Number.parseFloat
+
+------------------------------------------------------------
+PARA CONVERTER PARA STRINGS
+String(n)
+n.toString()
+
+------------------------------------------------------------
+PARA MOSTRAR UM TEXTO EM UMA JANELA POUP-UP
+window.alert('Minha Primeira Mensagem');
+
+------------------------------------------------------------
+PARA CONFIRMAR UMA ESCOLHA
+window.confirm('Está gostando de JavaScript')
+
+------------------------------------------------------------
+PARA CAPTURAR ALGO E COLOCAR EM UMA VARIAVEL
+window.prompt('Qual o seu nome?')
+
+------------------------------------------------------------
+var s = `JavaScript`
+*********************
+s.length //Aqui mostra quantos caracteres tem uma string
+
+*********************
+s.toUpperCase() // Aqui transforma texto em "MAIUSCULAS"
+
+*********************
+s.toLowerCase() // Aqui transforma texto em "minúsculas"
+------------------------------------------------------------
+PARA PULAR PARA LINHA DE BAIXO
+<br>
+<br/>
+------------------------------------------------------------
+AQUI FICA EM NEGRITO 
+<strong> TEXTO EM NEGRITO </strong>
+
+------------------------------------------------------------
+AUMENTAR O NÚMERO DE CASAS DECIMAIS - .toFixed()
+
+
+var n1 = 1545.5
+
+n1.toFixed(2)
+
+RESULTADO SERA ESSE ENTRE O PARENTESES('1545.50')
+------------------------------------------------------------
+PARA TROCAR O PONTO POR VIRGULA QUE É USADO NO BRASIL
+TEM DE USAR O .REPLACE() SEGUE EXEMPLO ABAIXO
+
+
+var n1 = 1545.5
+
+n1.toFixed(2).replace(".",",")
+
+------------------------------------------------------------
+COMANDO PARA MOSTRAR MOEDA DO BRASIL CÓDIGO BRL
+VALOR MOEDA DO BRASIL EM REAL, REAIS DO BRASIL
+REAL
+DOLAR
+EURO
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+
+RESULTADO SERA ESSE ENTRE O PARENTESES('R$ 1.545,50')
+
+------------------------------------------------------------
+PRECEDENCIA
+
+() PRIMEIRO PARENTES
+** SEGUNDO EXPONIAÇÃO
+/ * TERCEIRO DIVISÃO OU MULTIPLICAÇÃO
++ - QUARTO SOMA OU SUBTRAÇÃO
+.......
+! PRIMEIRO O "NÃO"
+&& SEGUNDO O "E"
+|| TERCEIRO O "OU"
+.......
+TERNARIO
+?:
+
+------------------------------------------------------------
+ARVORE DOM Document Object Model
+window.location
+window.document
+window.history
+
+------------------------------------------------------------
+CONDIÇÕES SIMPLES
+------------------------------------------------------------
+CONDIÇOES COMPOSTAS
+------------------------------------------------------------
+CONDIÇÕES ANINHADAS
+------------------------------------------------------------
+CONDIÇÕES MÚLTIPLAS
+
+switch (expressão) {
+	case valor1:
+	
+	break
+	case valor2:
+	
+	break
+	case valor3:
+	
+	break
+	default:
+	
+	break
+------------------------------------------------------------
+
+------------------------------------------------------------
